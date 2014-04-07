@@ -1,0 +1,20 @@
+﻿<Window x:Class="_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0" ItemsSource="{Binding Trains}" AutoGenerateColumns="True" >
+            <DataGrid.Columns>
+                
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Click="Button_Click">Загрузить</Button>
+            <Button Click="Button_Click_1">Сохранить</Button>
+        </StackPanel>
+    </Grid>
+</Window>
